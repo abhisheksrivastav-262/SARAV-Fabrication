@@ -428,8 +428,91 @@
         </div>
     </section>
 
+    <!-- Latest Videos Section (YouTube Shorts Carousel) -->
+    <section class="section" style="background: var(--color-bg); border-top: var(--glass-border); border-bottom: var(--glass-border); position: relative; overflow: hidden;">
+        <div class="container">
+            <h2 class="section-title reveal">Latest <span>Videos</span></h2>
+            <p class="section-subtitle reveal">Watch our latest fabrication work, projects and updates.</p>
+            
+            <div class="reveal" style="position: relative; max-width: 1100px; margin: 0 auto;">
+                <!-- Prev/Next Controls for Desktop/Tablet -->
+                <button class="carousel-prev" aria-label="Previous Video" style="position: absolute; left: -60px; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; border-radius: 50%; background: var(--color-surface); border: var(--glass-border); color: #fff; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease; z-index: 10; box-shadow: var(--glass-shadow); font-size: 16px;">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                
+                <!-- Video Carousel Container -->
+                <div class="video-carousel" style="display: flex; gap: var(--space-md); overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; padding: var(--space-xs) 0; -webkit-overflow-scrolling: touch; scrollbar-width: none;">
+                    <!-- Video 1 -->
+                    <div class="video-card" style="flex: 0 0 100%; scroll-snap-align: center; max-width: 310px; margin: 0 auto; display: flex; flex-direction: column; background: var(--color-surface); border: var(--glass-border); border-radius: 16px; padding: var(--space-md); box-shadow: var(--glass-shadow); transition: all 0.3s ease;">
+                        <div style="aspect-ratio: 9/16; width: 100%; position: relative; overflow: hidden; border-radius: 10px; background: #000;">
+                            <iframe 
+                                src="https://www.youtube.com/embed/cRbs7d8sijg" 
+                                title="Our Latest Fabrication Work" 
+                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen 
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                        <div style="padding-top: var(--space-sm); text-align: center;">
+                            <h4 style="font-family: var(--font-primary); font-size: var(--text-base); color: #fff; margin-bottom: 2px;">Our Latest Fabrication Work</h4>
+                            <span style="font-size: var(--text-xs); color: var(--color-primary); text-transform: uppercase; letter-spacing: 1px; font-weight: 600;">Showcase</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Video 2 -->
+                    <div class="video-card" style="flex: 0 0 100%; scroll-snap-align: center; max-width: 310px; margin: 0 auto; display: flex; flex-direction: column; background: var(--color-surface); border: var(--glass-border); border-radius: 16px; padding: var(--space-md); box-shadow: var(--glass-shadow); transition: all 0.3s ease;">
+                        <div style="aspect-ratio: 9/16; width: 100%; position: relative; overflow: hidden; border-radius: 10px; background: #000;">
+                            <iframe 
+                                src="https://www.youtube.com/embed/Xe_CNXSrhbI" 
+                                title="Our Projects & Work" 
+                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen 
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                        <div style="padding-top: var(--space-sm); text-align: center;">
+                            <h4 style="font-family: var(--font-primary); font-size: var(--text-base); color: #fff; margin-bottom: 2px;">Our Projects & Work</h4>
+                            <span style="font-size: var(--text-xs); color: var(--color-primary); text-transform: uppercase; letter-spacing: 1px; font-weight: 600;">Fabrication</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Video 3 -->
+                    <div class="video-card" style="flex: 0 0 100%; scroll-snap-align: center; max-width: 310px; margin: 0 auto; display: flex; flex-direction: column; background: var(--color-surface); border: var(--glass-border); border-radius: 16px; padding: var(--space-md); box-shadow: var(--glass-shadow); transition: all 0.3s ease;">
+                        <div style="aspect-ratio: 9/16; width: 100%; position: relative; overflow: hidden; border-radius: 10px; background: #000;">
+                            <iframe 
+                                src="https://www.youtube.com/embed/0PMhwc4Cl-o" 
+                                title="Fabrication Work Showcase" 
+                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen 
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                        <div style="padding-top: var(--space-sm); text-align: center;">
+                            <h4 style="font-family: var(--font-primary); font-size: var(--text-base); color: #fff; margin-bottom: 2px;">Fabrication Work Showcase</h4>
+                            <span style="font-size: var(--text-xs); color: var(--color-primary); text-transform: uppercase; letter-spacing: 1px; font-weight: 600;">Updates</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-next" aria-label="Next Video" style="position: absolute; right: -60px; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; border-radius: 50%; background: var(--color-surface); border: var(--glass-border); color: #fff; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease; z-index: 10; box-shadow: var(--glass-shadow); font-size: 16px;">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            
+            <!-- Pagination Indicator Dots -->
+            <div class="carousel-dots" style="display: flex; justify-content: center; gap: 8px; margin-top: var(--space-lg);">
+                <span class="carousel-dot active" data-index="0" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.2); cursor: pointer; transition: all 0.3s ease;"></span>
+                <span class="carousel-dot" data-index="1" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.2); cursor: pointer; transition: all 0.3s ease;"></span>
+                <span class="carousel-dot" data-index="2" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.2); cursor: pointer; transition: all 0.3s ease;"></span>
+            </div>
+        </div>
+    </section>
+
     <!-- Call To Action Section -->
-    <section class="section" style="background: linear-gradient(135deg, rgba(212,175,55,0.1) 0%, rgba(5,5,5,0.8) 100%), url('7.png') no-repeat center/cover; padding: var(--space-3xl) 0; position: relative;">
+    <section class="section" style="background: linear-gradient(135deg, rgba(255,106,0,0.1) 0%, rgba(5,5,5,0.8) 100%), url('7.png') no-repeat center/cover; padding: var(--space-3xl) 0; position: relative;">
         <div class="container reveal" style="text-align: center; z-index: 2;">
             <h2 class="section-title" style="color: #fff; margin-bottom: var(--space-md); font-size: clamp(2rem, 3vw, 3rem);">Need Heavy Industrial Fabrication?</h2>
             <p class="section-subtitle" style="color: #ccc; max-width: 600px; margin-bottom: var(--space-xl);">Let's build something strong together. Reach out for expert consultations, structural site visits, and free estimates across Gujarat.</p>

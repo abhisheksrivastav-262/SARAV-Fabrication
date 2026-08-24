@@ -165,4 +165,41 @@ document.addEventListener('DOMContentLoaded', () => {
             if (e.key === 'ArrowRight') showImage(currentIndex + 1);
         });
     }
+
+    // Video Carousel System
+    const videoCarousel = document.querySelector('.video-carousel');
+    const vPrev = document.querySelector('.carousel-prev');
+    const vNext = document.querySelector('.carousel-next');
+    const vDots = document.querySelectorAll('.carousel-dot');
+
+    if (videoCarousel) {
+        const updateDots = () => {
+            const scrollLeft = videoCarousel.scrollLeft;
+            const cardWidth = videoCarousel.querySelector('.video-card').offsetWidth;
+            const index = Math.round(scrollLeft / cardWidth);
+            vDots.forEach((dot, idx) => {
+                dot.classList.toggle('active', idx === index);
+            });
+        };
+
+        if (vPrev && vNext) {
+            vPrev.addEventListener('click', () => {
+                const cardWidth = videoCarousel.querySelector('.video-card').offsetWidth;
+                videoCarousel.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+            });
+            vNext.addEventListener('click', () => {
+                const cardWidth = videoCarousel.querySelector('.video-card').offsetWidth;
+                videoCarousel.scrollBy({ left: cardWidth, behavior: 'smooth' });
+            });
+        }
+
+        videoCarousel.addEventListener('scroll', updateDots);
+        
+        vDots.forEach((dot, idx) => {
+            dot.addEventListener('click', () => {
+                const cardWidth = videoCarousel.querySelector('.video-card').offsetWidth;
+                videoCarousel.scrollTo({ left: idx * cardWidth, behavior: 'smooth' });
+            });
+        });
+    }
 });

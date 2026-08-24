@@ -51,7 +51,7 @@ body { font-family: var(--font-secondary); background-color: var(--color-bg); co
 h1, h2, h3, h4, h5, h6 { font-family: var(--font-primary); font-weight: 700; line-height: 1.1; margin-bottom: var(--space-sm); }
 a { text-decoration: none; color: inherit; transition: color var(--transition-fast); }
 ul { list-style: none; }
-img { max-width: 100%; height: auto; display: block; object-fit: cover; }
+img { max-width: 100%; height: auto; display: block; object-fit: contain; }
 
 /* --- Layout & Utilities --- */
 .container { width: 100%; max-width: 1400px; margin: 0 auto; padding: 0 var(--space-lg); }
@@ -108,7 +108,7 @@ img { max-width: 100%; height: auto; display: block; object-fit: cover; }
 
 /* --- Hero Section --- */
 .hero { position: relative; min-height: 100vh; display: flex; align-items: center; justify-content: center; overflow: hidden; padding-top: var(--space-3xl); }
-.hero-bg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; filter: brightness(0.3); }
+.hero-bg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; background-color: #111215; z-index: 1; filter: brightness(0.3); }
 .hero-content { position: relative; z-index: 2; text-align: center; width: 100%; padding: 0 var(--space-lg); }
 .hero-title { font-size: var(--text-5xl); margin-bottom: var(--space-md); animation: fadeUp 1s forwards; opacity: 0; }
 .hero-title span { color: var(--color-primary); }

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | SARAV Fabrication</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .contact-form { display: flex; flex-direction: column; gap: var(--space-md); }
+        .contact-form input, .contact-form textarea { width: 100%; padding: 1rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: white; border-radius: 4px; font-family: var(--font-secondary); font-size: var(--text-base); }
+        .contact-form input:focus, .contact-form textarea:focus { outline: none; border-color: var(--color-primary); }
+    </style>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="index.html" class="brand-logo-container">
+                <div class="brand-logo-img-wrapper">
+                    <img src="logo.jpg" alt="SARAV Fabrication Logo">
+                </div>
+                <div class="brand-text-wrapper">
+                    <span class="brand-name">SARAV <span>Fabrication</span></span>
+                    <span class="brand-tagline">Weld &bull; Shape &bull; Create</span>
+                </div>
+            </a>
+            <button class="mobile-toggle" aria-label="Toggle Menu"><span></span><span></span><span></span></button>
+            <div class="nav-menu">
+                <nav class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="contact.html" class="active">Contact</a>
+                </nav>
+                <div class="nav-actions">
+                    <a href="tel:+919998651958" class="btn btn-primary"><i class="fas fa-phone-alt"></i> Call Now</a>
+                    <a href="https://wa.me/919998651958" class="btn btn-outline" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact/Enquiry Form Section -->
+    <section class="section" style="padding-top: var(--space-3xl); margin-top: 80px; padding-bottom: var(--space-xl);">
+        <div class="container">
+            <h2 class="section-title reveal">Contact <span>Us</span></h2>
+            <p class="section-subtitle reveal">Let's discuss your next premium industrial fabrication project.</p>
+            
+            <div class="grid reveal" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: var(--space-xl); align-items: start; margin-top: var(--space-xl);">
+                <!-- Left Column: Contact Cards -->
+                <div style="display: flex; flex-direction: column; gap: var(--space-md);">
+                    <div style="background: var(--color-surface); padding: var(--space-xl); border-radius: 18px; border: var(--glass-border); box-shadow: var(--glass-shadow);">
+                        <h3 class="card-title" style="margin-bottom: var(--space-md); font-size: var(--text-lg); display: flex; align-items: center; gap: 10px;">
+                            <i class="fas fa-map-marker-alt" style="color: var(--color-primary);"></i> Office Address
+                        </h3>
+                        <p class="card-desc" style="line-height: 1.8; color: var(--color-text-muted);">29, Nalanda Estate, Odhav Ring Road, Ahmedabad, Gujarat</p>
+                    </div>
+                    
+                    <div style="background: var(--color-surface); padding: var(--space-xl); border-radius: 18px; border: var(--glass-border); box-shadow: var(--glass-shadow);">
+                        <h3 class="card-title" style="margin-bottom: var(--space-md); font-size: var(--text-lg); display: flex; align-items: center; gap: 10px;">
+                            <i class="fas fa-phone" style="color: var(--color-primary);"></i> Phone Numbers
+                        </h3>
+                        <p class="card-desc" style="line-height: 1.8; display: flex; flex-direction: column; gap: 8px;">
+                            <a href="tel:+919998651958" style="color: var(--color-text-muted); transition: color 0.3s;"><i class="fas fa-phone-alt" style="color: var(--color-primary); margin-right: 5px; font-size: 0.9em;"></i> +91 99986 51958</a>
+                            <a href="tel:+919925151958" style="color: var(--color-text-muted); transition: color 0.3s;"><i class="fas fa-phone-alt" style="color: var(--color-primary); margin-right: 5px; font-size: 0.9em;"></i> +91 99251 51958</a>
+                        </p>
+                    </div>
+                    
+                    <div style="background: var(--color-surface); padding: var(--space-xl); border-radius: 18px; border: var(--glass-border); box-shadow: var(--glass-shadow);">
+                        <h3 class="card-title" style="margin-bottom: var(--space-md); font-size: var(--text-lg); display: flex; align-items: center; gap: 10px;">
+                            <i class="fas fa-envelope" style="color: var(--color-primary);"></i> Email Address
+                        </h3>
+                        <p class="card-desc" style="line-height: 1.8; color: var(--color-text-muted);">
+                            <a href="mailto:info@saravfabrication.com" style="color: var(--color-text-muted); transition: color 0.3s;"><i class="far fa-envelope" style="color: var(--color-primary); margin-right: 5px;"></i> info@saravfabrication.com</a>
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Right Column: Enquiry Form Card -->
+                <div class="card" style="background: var(--color-surface); border: var(--glass-border); border-radius: 18px; box-shadow: var(--glass-shadow); padding: var(--space-xl);">
+                    <h3 class="card-title" style="margin-bottom: var(--space-lg); font-size: var(--text-xl);">Send an Enquiry</h3>
+                    <form class="contact-form" id="contactForm" style="display: flex; flex-direction: column; gap: var(--space-md);">
+                        <div style="display: flex; flex-direction: column; gap: 5px;">
+                            <label for="name" style="font-size: var(--text-xs); color: var(--color-text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Full Name</label>
+                            <input type="text" id="name" placeholder="Your Name" required style="width: 100%; padding: var(--space-md); border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); background: rgba(0,0,0,0.2); color: #fff; outline: none; transition: border-color 0.3s;">
+                        </div>
+                        
+                        <div style="display: flex; flex-direction: column; gap: 5px;">
+                            <label for="email" style="font-size: var(--text-xs); color: var(--color-text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Email Address</label>
+                            <input type="email" id="email" placeholder="Your Email" required style="width: 100%; padding: var(--space-md); border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); background: rgba(0,0,0,0.2); color: #fff; outline: none; transition: border-color 0.3s;">
+                        </div>
+                        
+                        <div style="display: flex; flex-direction: column; gap: 5px;">
+                            <label for="phone" style="font-size: var(--text-xs); color: var(--color-text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Phone Number</label>
+                            <input type="tel" id="phone" placeholder="Phone Number" required style="width: 100%; padding: var(--space-md); border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); background: rgba(0,0,0,0.2); color: #fff; outline: none; transition: border-color 0.3s;">
+                        </div>
+                        
+                        <div style="display: flex; flex-direction: column; gap: 5px;">
+                            <label for="message" style="font-size: var(--text-xs); color: var(--color-text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Project Details</label>
+                            <textarea id="message" rows="5" placeholder="Tell us about your requirements..." required style="width: 100%; padding: var(--space-md); border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); background: rgba(0,0,0,0.2); color: #fff; outline: none; transition: border-color 0.3s; resize: vertical;"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%; padding: var(--space-md); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-top: var(--space-sm);">Send via WhatsApp</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Map Section (Directly below the Enquiry Form) -->
+    <section class="section" style="padding-top: 0; padding-bottom: var(--space-2xl);">
+        <div class="container reveal">
+            <div style="position: relative; width: 100%; border-radius: 20px; overflow: hidden; border: var(--glass-border); background: var(--color-surface); box-shadow: var(--glass-shadow);">
+                <iframe
+                  src="https://www.google.com/maps?q=29%20Nalanda%20Estate%2C%20Odhav%20Ring%2C%20Ahmedabad%2C%20Gujarat&output=embed"
+                  width="100%"
+                  height="450"
+                  style="border:0;"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  allowfullscreen>
+                </iframe>
+                <div style="position: absolute; bottom: 20px; right: 20px; z-index: 10;">
+                    <a href="https://www.google.com/maps/search/?api=1&query=29+Nalanda+Estate+Odhav+Ring+Road+Ahmedabad+Gujarat" target="_blank" class="btn btn-primary" style="box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
+                        <i class="fas fa-directions"></i> Get Directions
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: #050505; border-top: var(--glass-border); padding: var(--space-2xl) 0 var(--space-md) 0;">
+        <div class="container">
+            <div class="footer-grid" style="border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: var(--space-xl); margin-bottom: var(--space-xl);">
+                <div>
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: var(--space-md);">
+                        <div style="width: 50px; height: 50px; background: #ffffff; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(0,0,0,0.15); overflow: hidden; flex-shrink: 0;">
+                            <img src="logo.jpg" alt="SARAV Fabrication Logo" style="width: 82%; height: 82%; object-fit: contain; border-radius: 50%;">
+                        </div>
+                        <span style="font-family: var(--font-primary); font-size: 1.15rem; font-weight: 800; color: #ffffff; letter-spacing: 1.5px; text-transform: uppercase;">SARAV <span style="color: var(--color-primary);">Fabrication</span></span>
+                    </div>
+                    <p style="font-family: var(--font-primary); font-size: 0.75rem; font-weight: 600; color: var(--color-primary); letter-spacing: 2px; text-transform: uppercase; margin-bottom: var(--space-sm); line-height: 1; padding-left: 5px;">&gt; Weld &bull; Shape &bull; Create</p>
+                    <p class="card-desc" style="max-width: 320px; line-height: 1.8;">Setting the gold standard in industrial fabrication across Gujarat with uncompromising quality and certified engineering.</p>
+                </div>
+                <div>
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="projects.html">Featured Projects</a></li>
+                        <li><a href="gallery.html">Workshop Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-title">Our Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html#industrial-shed">Industrial Shed</a></li>
+                        <li><a href="services.html#fiber-shed">Fiber Shed</a></li>
+                        <li><a href="services.html#industrial-gate">Industrial Gate</a></li>
+                        <li><a href="services.html#welding-work">Welding Work</a></li>
+                        <li><a href="services.html#katheda">Katheda</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-title">Contact Info</h3>
+                    <ul class="footer-links" style="color: var(--color-text-muted); display: flex; flex-direction: column; gap: 0.8rem;">
+                        <li style="display: flex; gap: 10px; align-items: flex-start;"><i class="fas fa-map-marker-alt" style="color: var(--color-primary); margin-top: 4px;"></i> <span>29, Nalanda Estate, Odhav Ring Road, Ahmedabad, Gujarat</span></li>
+                        <li style="display: flex; gap: 10px; align-items: center;"><i class="fas fa-phone" style="color: var(--color-primary);"></i> <a href="tel:+919998651958" style="transition: color 0.3s;">+91 99986 51958</a></li>
+                        <li style="display: flex; gap: 10px; align-items: center;"><i class="fas fa-phone" style="color: var(--color-primary);"></i> <a href="tel:+919925151958" style="transition: color 0.3s;">+91 99251 51958</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div style="text-align: center; color: var(--color-text-muted); font-size: var(--text-xs);">
+                &copy; 2026 SARAV Fabrication. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <div class="floating-actions">
+        <a href="https://wa.me/919998651958" class="float-btn float-whatsapp" target="_blank" aria-label="WhatsApp Us"><i class="fab fa-whatsapp"></i></a>
+        <a href="tel:+919998651958" class="float-btn float-call" aria-label="Call Us"><i class="fas fa-phone"></i></a>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+            const text = `Hello SARAV Fabrication, my name is ${name} (${phone}). I have an enquiry: ${message}`;
+            window.open(`https://wa.me/919998651958?text=${encodeURIComponent(text)}`, '_blank');
+        });
+    </script>
+</body>
+</html>

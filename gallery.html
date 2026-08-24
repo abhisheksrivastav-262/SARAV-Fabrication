@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | SARAV Fabrication</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="index.html" class="brand-logo-container">
+                <div class="brand-logo-img-wrapper">
+                    <img src="logo.jpg" alt="SARAV Fabrication Logo">
+                </div>
+                <div class="brand-text-wrapper">
+                    <span class="brand-name">SARAV <span>Fabrication</span></span>
+                    <span class="brand-tagline">Weld &bull; Shape &bull; Create</span>
+                </div>
+            </a>
+            <button class="mobile-toggle" aria-label="Toggle Menu"><span></span><span></span><span></span></button>
+            <div class="nav-menu">
+                <nav class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="gallery.html" class="active">Gallery</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+                <div class="nav-actions">
+                    <a href="tel:+919998651958" class="btn btn-primary"><i class="fas fa-phone-alt"></i> Call Now</a>
+                    <a href="https://wa.me/919998651958" class="btn btn-outline" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section" style="padding-top: var(--space-3xl); margin-top: 80px;">
+        <div class="container">
+            <h2 class="section-title reveal">Photo <span>Gallery</span></h2>
+            <p class="section-subtitle reveal">Explore our fabrication workshop operations and completed installations across Gujarat.</p>
+            
+            <!-- Category Filters -->
+            <div class="filter-container reveal">
+                <button class="filter-btn active" data-filter="all">All Photos</button>
+                <button class="filter-btn" data-filter="workshop">Workshop</button>
+                <button class="filter-btn" data-filter="installation">Installation</button>
+                <button class="filter-btn" data-filter="fabrication">Fabrication</button>
+                <button class="filter-btn" data-filter="gates">Gates</button>
+                <button class="filter-btn" data-filter="sheds">Sheds</button>
+                <button class="filter-btn" data-filter="steel-structures">Steel Structures</button>
+            </div>
+            
+            <!-- Masonry Grid -->
+            <div class="masonry-grid reveal" id="gallery-grid">
+                
+                <!-- 1. a.png (Sheds) -->
+                <div class="masonry-item" data-category="sheds" data-index="0">
+                    <img src="a.png" alt="Heavy Industrial Shed Structure" loading="lazy">
+                    <div class="masonry-overlay">
+                        <span class="masonry-category">Sheds</span>
+                        <h4 class="masonry-title">Industrial Steel Shed</h4>
+                    </div>
+                </div>
+
+                <!-- 2. a1.png (Sheds) -->
+                <div class="masonry-item" data-category="sheds" data-index="1">
+                    <img src="a1.png" alt="Translucent Yard Fiber Shed" loading="lazy">
+                    <div class="masonry-overlay">
+                        <span class="masonry-category">Sheds</span>
+                        <h4 class="masonry-title">Fiber Shed Roofing</h4>
+                    </div>
+                </div>
+
+                <!-- 3. a2.png (Gates) -->
+                <div class="masonry-item" data-category="gates" data-index="2">
+                    <img src="a2.png" alt="Heavy Perimeter Gate Frame" loading="lazy">
+                    <div class="masonry-overlay">
+                        <span class="masonry-category">Gates</span>
+                        <h4 class="masonry-title">Industrial Gate Frame</h4>
+                    </div>
+                </div>
+
+                <!-- 4. a3.png (Gates) -->
+                <div class="masonry-item" data-category="gates" data-index="3">
+                    <img src="a3.png" alt="Warehouse Main Entrance Door" loading="lazy">
+                    <div class="masonry-overlay">
+                        <span class="masonry-category">Gates</span>
+                        <h4 class="masonry-title">Bari Darvaja Entrance</h4>
+                    </div>
+                </div>
+
+                <!-- 5. 4.png (Steel Structures) -->
+                <div class="masonry-item" data-category="steel-structures" data-index="4">
+                    <img src="4.png" alt="Mezzanine Floor Protective Railing" loading="lazy">
+                    <div class="masonry-overlay">
+                        <span class="masonry-category">Steel Structures</span>
+                        <h4 class="masonry-title">Katheda Railing System</h4>
+                    </div>
+                </div>
+
+                <!-- 6. 5.png (Workshop) -->
+                <div class="masonry-item" data-category="workshop" data-index="5">
+                    <img src="5.png" alt="Certified Structural Welding Joint" loading="lazy">
+                    <div class="masonry-overlay">
+                        <span class="masonry-category">Workshop</span>
+                        <h4 class="masonry-title">Structural MIG Welding</h4>
+                    </div>
+                </div>
+
+                <!-- 7. 6.png (Fabrication) -->
+                <div class="masonry-item" data-category="fabrication" data-index="6">
+                    <img src="6.png" alt="Heavy Sheet Metal Profiling" loading="lazy">
+                    <div class="masonry-overlay">
+                        <span class="masonry-category">Fabrication</span>
+                        <h4 class="masonry-title">Custom Steel Fabrication</h4>
+                    </div>
+                </div>
+
+                <!-- 8. 7.png (Sheds) -->
+                <div class="masonry-item" data-category="sheds" data-index="7">
+                    <img src="7.png" alt="Large Factory Shed Construction" loading="lazy">
+                    <div class="masonry-overlay">
+                        <span class="masonry-category">Sheds</span>
+                        <h4 class="masonry-title">Erection of Warehouse Shed</h4>
+                    </div>
+                </div>
+
+                <!-- 9. 8.png (Sheds) -->
+                <div class="masonry-item" data-category="sheds" data-index="8">
+                    <img src="8.png" alt="High Wind Load Resistant Purlins" loading="lazy">
+                    <div class="masonry-overlay">
+                        <span class="masonry-category">Sheds</span>
+                        <h4 class="masonry-title">Warehouse Framing Overview</h4>
+                    </div>
+                </div>
+
+                <!-- 10. 9.png (Gates) -->
+                <div class="masonry-item" data-category="gates" data-index="9">
+                    <img src="9.png" alt="Sliding Gate Track Erection" loading="lazy">
+                    <div class="masonry-overlay">
+                        <span class="masonry-category">Gates</span>
+                        <h4 class="masonry-title">Sliding Gate Installation</h4>
+                    </div>
+                </div>
+
+                <!-- 11. 10.png (Steel Structures) -->
+                <div class="masonry-item" data-category="steel-structures" data-index="10">
+                    <img src="10.png" alt="High Capacity Mezzanine Storage Platform" loading="lazy">
+                    <div class="masonry-overlay">
+                        <span class="masonry-category">Steel Structures</span>
+                        <h4 class="masonry-title">Heavy Duty Mezzanine Deck</h4>
+                    </div>
+                </div>
+
+                <!-- 12. 11.png (Installation) -->
+                <div class="masonry-item" data-category="installation" data-index="11">
+                    <img src="11.png" alt="Polycarbonate Roof Panels Erection" loading="lazy">
+                    <div class="masonry-overlay">
+                        <span class="masonry-category">Installation</span>
+                        <h4 class="masonry-title">Fiber Panel Installation</h4>
+                    </div>
+                </div>
+
+                <!-- 13. 12.png (Workshop) -->
+                <div class="masonry-item" data-category="workshop" data-index="12">
+                    <img src="12.png" alt="Pipeline Bracket High Stress Weld" loading="lazy">
+                    <div class="masonry-overlay">
+                        <span class="masonry-category">Workshop</span>
+                        <h4 class="masonry-title">Precision Joint Welding</h4>
+                    </div>
+                </div>
+
+                <!-- 14. 13.png (Steel Structures) -->
+                <div class="masonry-item" data-category="steel-structures" data-index="13">
+                    <img src="13.png" alt="Foundry Overhead Crane Support Girder" loading="lazy">
+                    <div class="masonry-overlay">
+                        <span class="masonry-category">Steel Structures</span>
+                        <h4 class="masonry-title">Gantry Girder Fabrication</h4>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" aria-label="Close Lightbox">&times;</button>
+        <button class="lightbox-prev" aria-label="Previous Image"><i class="fas fa-chevron-left"></i></button>
+        <div class="lightbox-content">
+            <img src="" alt="Enlarged Project Image" id="lightbox-img">
+            <div class="lightbox-caption" id="lightbox-caption">Image Description</div>
+        </div>
+        <button class="lightbox-next" aria-label="Next Image"><i class="fas fa-chevron-right"></i></button>
+    </div>
+
+    <!-- Footer -->
+    <footer style="background: #050505; border-top: var(--glass-border); padding: var(--space-2xl) 0 var(--space-md) 0;">
+        <div class="container">
+            <div class="footer-grid" style="border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: var(--space-xl); margin-bottom: var(--space-xl);">
+                <div>
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: var(--space-md);">
+                        <div style="width: 50px; height: 50px; background: #ffffff; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(0,0,0,0.15); overflow: hidden; flex-shrink: 0;">
+                            <img src="logo.jpg" alt="SARAV Fabrication Logo" style="width: 82%; height: 82%; object-fit: contain; border-radius: 50%;">
+                        </div>
+                        <span style="font-family: var(--font-primary); font-size: 1.15rem; font-weight: 800; color: #ffffff; letter-spacing: 1.5px; text-transform: uppercase;">SARAV <span style="color: var(--color-primary);">Fabrication</span></span>
+                    </div>
+                    <p style="font-family: var(--font-primary); font-size: 0.75rem; font-weight: 600; color: var(--color-primary); letter-spacing: 2px; text-transform: uppercase; margin-bottom: var(--space-sm); line-height: 1; padding-left: 5px;">&gt; Weld &bull; Shape &bull; Create</p>
+                    <p class="card-desc" style="max-width: 320px; line-height: 1.8;">Setting the gold standard in industrial fabrication across Gujarat with uncompromising quality and certified engineering.</p>
+                </div>
+                <div>
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="projects.html">Featured Projects</a></li>
+                        <li><a href="gallery.html">Workshop Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-title">Our Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html#industrial-shed">Industrial Shed</a></li>
+                        <li><a href="services.html#fiber-shed">Fiber Shed</a></li>
+                        <li><a href="services.html#industrial-gate">Industrial Gate</a></li>
+                        <li><a href="services.html#welding-work">Welding Work</a></li>
+                        <li><a href="services.html#katheda">Katheda</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-title">Contact Info</h3>
+                    <ul class="footer-links" style="color: var(--color-text-muted); display: flex; flex-direction: column; gap: 0.8rem;">
+                        <li style="display: flex; gap: 10px; align-items: flex-start;"><i class="fas fa-map-marker-alt" style="color: var(--color-primary); margin-top: 4px;"></i> <span>29, Nalanda Estate, Odhav Ring Road, Ahmedabad, Gujarat</span></li>
+                        <li style="display: flex; gap: 10px; align-items: center;"><i class="fas fa-phone" style="color: var(--color-primary);"></i> <a href="tel:+919998651958" style="transition: color 0.3s;">+91 99986 51958</a></li>
+                        <li style="display: flex; gap: 10px; align-items: center;"><i class="fas fa-phone" style="color: var(--color-primary);"></i> <a href="tel:+919925151958" style="transition: color 0.3s;">+91 99251 51958</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div style="text-align: center; color: var(--color-text-muted); font-size: var(--text-xs);">
+                &copy; 2026 SARAV Fabrication. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <div class="floating-actions">
+        <a href="https://wa.me/919998651958" class="float-btn float-whatsapp" target="_blank" aria-label="WhatsApp Us"><i class="fab fa-whatsapp"></i></a>
+        <a href="tel:+919998651958" class="float-btn float-call" aria-label="Call Us"><i class="fas fa-phone"></i></a>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

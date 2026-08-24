@@ -1,0 +1,12 @@
+{
+  "name": "sarav-fabrication",
+  "version": "1.0.0",
+  "description": "Premium Industrial Fabrication Website",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve ."
+  },
+  "dependencies": {
+    "serve": "^14.2.1"
+  }
+}

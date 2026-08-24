@@ -10,12 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script>
-        function handleVideoError(video) {
-            console.warn(`Authorized video asset pending at root: ${video.getAttribute('src')}`);
-            video.style.display = 'none';
-        }
-    </script>
 </head>
 <body>
 
@@ -430,95 +424,6 @@
                         <div class="testimonial-company">Managing Partner, Gujarat Steel Castings</div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Latest Videos Section (YouTube Shorts Carousel) -->
-    <section class="section" style="background: var(--color-bg); border-top: var(--glass-border); border-bottom: var(--glass-border); position: relative; overflow: hidden;">
-        <div class="container">
-            <h2 class="section-title reveal">Latest <span>Videos</span></h2>
-            <p class="section-subtitle reveal">Watch our latest fabrication work, projects and updates.</p>
-            
-            <div class="reveal" style="position: relative; max-width: 1100px; margin: 0 auto;">
-                <!-- Prev/Next Controls for Desktop/Tablet -->
-                <button class="carousel-prev" aria-label="Previous Video" style="position: absolute; left: -60px; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; border-radius: 50%; background: var(--color-surface); border: var(--glass-border); color: #fff; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease; z-index: 10; box-shadow: var(--glass-shadow); font-size: 16px;">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                
-                <!-- Video Carousel Container -->
-                <div class="video-carousel" style="display: flex; gap: var(--space-md); overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; padding: var(--space-xs) 0; -webkit-overflow-scrolling: touch; scrollbar-width: none;">
-                    <!-- Video 1 -->
-                    <div class="video-card" style="flex: 0 0 100%; scroll-snap-align: center; max-width: 310px; margin: 0 auto; display: flex; flex-direction: column; background: #000; border: var(--glass-border); border-radius: 16px; overflow: hidden; box-shadow: var(--glass-shadow); transition: all 0.3s ease; position: relative;">
-                        <div style="aspect-ratio: 9/16; width: 100%; position: relative; overflow: hidden; background: #000;">
-                            <video 
-                                src="cRbs7d8sijg.mp4" 
-                                controls 
-                                muted 
-                                playsinline 
-                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; background: #000; border: none; z-index: 2;"
-                                onerror="handleVideoError(this)">
-                            </video>
-                            <!-- Fallback Placeholder -->
-                            <div class="video-fallback" style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: var(--space-lg); text-align: center; background: radial-gradient(circle at center, #1d1e22 0%, #111215 100%); z-index: 1;">
-                                <i class="fas fa-video-slash" style="font-size: 2.5rem; color: var(--color-primary); margin-bottom: var(--space-md);"></i>
-                                <h4 style="font-family: var(--font-primary); font-size: var(--text-base); color: #fff; margin-bottom: 8px;">Video File Pending</h4>
-                                <p style="font-size: var(--text-xs); color: var(--color-text-muted); line-height: 1.5; max-width: 200px;">Please upload "cRbs7d8sijg.mp4" to the project root directory to play this showcase video.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Video 2 -->
-                    <div class="video-card" style="flex: 0 0 100%; scroll-snap-align: center; max-width: 310px; margin: 0 auto; display: flex; flex-direction: column; background: #000; border: var(--glass-border); border-radius: 16px; overflow: hidden; box-shadow: var(--glass-shadow); transition: all 0.3s ease; position: relative;">
-                        <div style="aspect-ratio: 9/16; width: 100%; position: relative; overflow: hidden; background: #000;">
-                            <video 
-                                src="Xe_CNXSrhbI.mp4" 
-                                controls 
-                                muted 
-                                playsinline 
-                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; background: #000; border: none; z-index: 2;"
-                                onerror="handleVideoError(this)">
-                            </video>
-                            <!-- Fallback Placeholder -->
-                            <div class="video-fallback" style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: var(--space-lg); text-align: center; background: radial-gradient(circle at center, #1d1e22 0%, #111215 100%); z-index: 1;">
-                                <i class="fas fa-video-slash" style="font-size: 2.5rem; color: var(--color-primary); margin-bottom: var(--space-md);"></i>
-                                <h4 style="font-family: var(--font-primary); font-size: var(--text-base); color: #fff; margin-bottom: 8px;">Video File Pending</h4>
-                                <p style="font-size: var(--text-xs); color: var(--color-text-muted); line-height: 1.5; max-width: 200px;">Please upload "Xe_CNXSrhbI.mp4" to the project root directory to play this showcase video.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Video 3 -->
-                    <div class="video-card" style="flex: 0 0 100%; scroll-snap-align: center; max-width: 310px; margin: 0 auto; display: flex; flex-direction: column; background: #000; border: var(--glass-border); border-radius: 16px; overflow: hidden; box-shadow: var(--glass-shadow); transition: all 0.3s ease; position: relative;">
-                        <div style="aspect-ratio: 9/16; width: 100%; position: relative; overflow: hidden; background: #000;">
-                            <video 
-                                src="0PMhwc4Cl-o.mp4" 
-                                controls 
-                                muted 
-                                playsinline 
-                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; background: #000; border: none; z-index: 2;"
-                                onerror="handleVideoError(this)">
-                            </video>
-                            <!-- Fallback Placeholder -->
-                            <div class="video-fallback" style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: var(--space-lg); text-align: center; background: radial-gradient(circle at center, #1d1e22 0%, #111215 100%); z-index: 1;">
-                                <i class="fas fa-video-slash" style="font-size: 2.5rem; color: var(--color-primary); margin-bottom: var(--space-md);"></i>
-                                <h4 style="font-family: var(--font-primary); font-size: var(--text-base); color: #fff; margin-bottom: 8px;">Video File Pending</h4>
-                                <p style="font-size: var(--text-xs); color: var(--color-text-muted); line-height: 1.5; max-width: 200px;">Please upload "0PMhwc4Cl-o.mp4" to the project root directory to play this showcase video.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <button class="carousel-next" aria-label="Next Video" style="position: absolute; right: -60px; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; border-radius: 50%; background: var(--color-surface); border: var(--glass-border); color: #fff; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease; z-index: 10; box-shadow: var(--glass-shadow); font-size: 16px;">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
-            </div>
-            
-            <!-- Pagination Indicator Dots -->
-            <div class="carousel-dots" style="display: flex; justify-content: center; gap: 8px; margin-top: var(--space-lg);">
-                <span class="carousel-dot active" data-index="0" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.2); cursor: pointer; transition: all 0.3s ease;"></span>
-                <span class="carousel-dot" data-index="1" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.2); cursor: pointer; transition: all 0.3s ease;"></span>
-                <span class="carousel-dot" data-index="2" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.2); cursor: pointer; transition: all 0.3s ease;"></span>
             </div>
         </div>
     </section>

@@ -52,11 +52,41 @@
     </header>
 
     <!-- Video Banner Section -->
-    <section class="video-banner" style="padding-top: calc(var(--space-3xl) + 20px); background: #050505; text-align: center; position: relative;">
-        <div class="hero-video-wrapper" style="margin: 0 auto; box-shadow: none; margin-bottom: 0; cursor: pointer;" onclick="const v = this.querySelector('video'); if(v.muted){v.muted=false;} else {v.paused ? v.play() : v.pause();}">
-            <video src="a.mp4" autoplay muted playsinline loop disablePictureInPicture style="pointer-events: none; width: 100%; height: auto; display: block; object-fit: cover;"></video>
+    <section class="video-banner" style="padding-top: calc(var(--space-3xl) + 20px); background: #050505; text-align: center;">
+        <div class="hero-video-wrapper" style="margin: 0 auto; box-shadow: none; margin-bottom: 0;">
+            <video id="heroVideo" src="a.mp4" autoplay muted playsinline loop disablePictureInPicture style="width: 100%; height: auto; display: block; object-fit: cover;"></video>
         </div>
     </section>
+
+    <script>
+        (function() {
+            var v = document.getElementById('heroVideo');
+            if (!v) return;
+
+            // Try unmuting immediately on load
+            v.play().then(function() {
+                v.muted = false;
+            }).catch(function() {
+                v.muted = true;
+                v.play();
+            });
+
+            // Enable audio seamlessly on first scroll, touch, or click anywhere on page
+            function enableAudio() {
+                if (v) {
+                    v.muted = false;
+                    v.play();
+                }
+                ['click', 'touchstart', 'pointerdown', 'keydown', 'scroll'].forEach(function(evt) {
+                    window.removeEventListener(evt, enableAudio);
+                });
+            }
+
+            ['click', 'touchstart', 'pointerdown', 'keydown', 'scroll'].forEach(function(evt) {
+                window.addEventListener(evt, enableAudio, { once: true, passive: true });
+            });
+        })();
+    </script>
 
     <!-- Hero Section -->
     <section class="hero" style="min-height: 85vh; padding-top: 0;">

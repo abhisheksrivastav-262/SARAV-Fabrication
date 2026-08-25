@@ -54,43 +54,9 @@
     <!-- Video Banner Section -->
     <section class="video-banner" style="padding-top: calc(var(--space-3xl) + 20px); background: #050505; text-align: center;">
         <div class="hero-video-wrapper" style="margin: 0 auto; box-shadow: none; margin-bottom: 0;">
-            <video id="heroVideo" src="a.mp4" autoplay muted playsinline loop disablePictureInPicture style="width: 100%; height: auto; display: block; object-fit: cover;"></video>
+            <video src="a.mp4" autoplay muted playsinline loop disablePictureInPicture style="width: 100%; height: auto; display: block; object-fit: cover;"></video>
         </div>
     </section>
-    <script>
-        (function() {
-            var v = document.getElementById("heroVideo");
-            if (!v) return;
-
-            v.muted = false;
-            var promise = v.play();
-
-            if (promise !== undefined) {
-                promise.then(function() {
-                    // Unmuted autoplay succeeded
-                }).catch(function() {
-                    // Fallback to muted playback immediately
-                    v.muted = true;
-                    v.play();
-
-                    // Unmute seamlessly on first user interaction anywhere on the page
-                    var unmuteOnInteraction = function() {
-                        if (v) {
-                            v.muted = false;
-                            v.play();
-                        }
-                        ['click', 'touchstart', 'pointerdown', 'keydown', 'scroll'].forEach(function(evt) {
-                            window.removeEventListener(evt, unmuteOnInteraction);
-                        });
-                    };
-
-                    ['click', 'touchstart', 'pointerdown', 'keydown', 'scroll'].forEach(function(evt) {
-                        window.addEventListener(evt, unmuteOnInteraction, { once: true, passive: true });
-                    });
-                });
-            }
-        })();
-    </script>
 
     <!-- Hero Section -->
     <section class="hero" style="min-height: 85vh; padding-top: 0;">

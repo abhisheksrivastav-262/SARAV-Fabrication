@@ -51,15 +51,22 @@
         </div>
     </header>
 
+    <!-- Video Banner Section -->
+    <section class="video-banner" style="padding-top: calc(var(--space-3xl) + 20px); background: #050505; text-align: center;">
+        <div class="hero-video-wrapper" style="margin: 0 auto; box-shadow: none; margin-bottom: 0;">
+            <video src="a.mp4" controls loop onclick="this.paused ? this.play() : this.pause()"></video>
+        </div>
+    </section>
+
     <!-- Hero Section -->
-    <section class="hero" style="min-height: 85vh;">
+    <section class="hero" style="min-height: 85vh; padding-top: 0;">
         <!-- Cinematic Background -->
         <img src="7.png" alt="SARAV Industrial Fabrication Background" class="hero-bg" loading="lazy">
         
-        <div class="hero-content">
-            <h1 class="hero-title" style="font-size: clamp(2.5rem, 4vw, 4.5rem);">Premium Industrial Fabrication & <span>Welding Solutions</span></h1>
-            <p class="hero-subtitle">Setting the gold standard in industrial sheds, gates, and custom steel structures across Gujarat.</p>
-            <div class="hero-buttons">
+        <div class="hero-content" style="padding: 0;">
+            <h1 class="hero-title" style="font-size: clamp(2.5rem, 4vw, 4.5rem); padding: 0 var(--space-lg);">Premium Industrial Fabrication & <span>Welding Solutions</span></h1>
+            <p class="hero-subtitle" style="padding: 0 var(--space-lg);">Setting the gold standard in industrial sheds, gates, and custom steel structures across Gujarat.</p>
+            <div class="hero-buttons" style="padding: 0 var(--space-lg);">
                 <a href="contact.html" class="btn btn-primary">Get Free Quote</a>
                 <a href="tel:+919998651958" class="btn btn-outline"><i class="fas fa-phone-alt"></i> Call Now</a>
             </div>
@@ -344,19 +351,6 @@
                     </div>
                 </div>
 
-                <!-- હેવી ઇન્ડસ્ટ્રિયલ સ્ટ્રક્ચર -->
-                <div class="card" style="padding: 0; overflow: hidden; border: none; background: transparent; display: flex; flex-direction: column;">
-                    <div class="project-img-wrapper" style="height: 220px; background: #1a1b1f;">
-                        <img src="હેવી ઇન્ડસ્ટ્રિયલ સ્ટ્રક્ચર.png" alt="હેવી ઇન્ડસ્ટ્રિયલ સ્ટ્રક્ચર" style="height: 100%; width: 100%; object-fit: contain;">
-                    </div>
-                    <div style="background: var(--color-surface); padding: var(--space-lg); border-radius: 0 0 12px 12px; border: var(--glass-border); border-top: none; flex-grow: 1;">
-                        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: var(--space-xs);">
-                            <i class="fas fa-check-circle" style="color: var(--color-primary); font-size: var(--text-lg);"></i>
-                            <h3 class="card-title" style="margin-bottom: 0;">હેવી ઇન્ડસ્ટ્રિયલ સ્ટ્રક્ચર</h3>
-                        </div>
-                        <p class="card-desc">હેવી ઇન્ડસ્ટ્રિયલ સ્ટ્રક્ચર services by SARAV Fabrication.</p>
-                    </div>
-                </div>
 
                 <!-- મેઝનાઇન ફ્લોર -->
                 <div class="card" style="padding: 0; overflow: hidden; border: none; background: transparent; display: flex; flex-direction: column;">
@@ -400,19 +394,6 @@
                     </div>
                 </div>
 
-                <!-- બારીઓ -->
-                <div class="card" style="padding: 0; overflow: hidden; border: none; background: transparent; display: flex; flex-direction: column;">
-                    <div class="project-img-wrapper" style="height: 220px; background: #1a1b1f;">
-                        <img src="બારીઓ.png" alt="બારીઓ" style="height: 100%; width: 100%; object-fit: contain;">
-                    </div>
-                    <div style="background: var(--color-surface); padding: var(--space-lg); border-radius: 0 0 12px 12px; border: var(--glass-border); border-top: none; flex-grow: 1;">
-                        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: var(--space-xs);">
-                            <i class="fas fa-check-circle" style="color: var(--color-primary); font-size: var(--text-lg);"></i>
-                            <h3 class="card-title" style="margin-bottom: 0;">બારીઓ</h3>
-                        </div>
-                        <p class="card-desc">બારીઓ services by SARAV Fabrication.</p>
-                    </div>
-                </div>
 
                 <!-- ફાઇબર કેનોપી -->
                 <div class="card" style="padding: 0; overflow: hidden; border: none; background: transparent; display: flex; flex-direction: column;">
@@ -428,19 +409,6 @@
                     </div>
                 </div>
 
-                <!-- પોલીકાર્બોનેટ ડોમ -->
-                <div class="card" style="padding: 0; overflow: hidden; border: none; background: transparent; display: flex; flex-direction: column;">
-                    <div class="project-img-wrapper" style="height: 220px; background: #1a1b1f;">
-                        <img src="પોલીકાર્બોનેટ ડોમ.png" alt="પોલીકાર્બોનેટ ડોમ" style="height: 100%; width: 100%; object-fit: contain;">
-                    </div>
-                    <div style="background: var(--color-surface); padding: var(--space-lg); border-radius: 0 0 12px 12px; border: var(--glass-border); border-top: none; flex-grow: 1;">
-                        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: var(--space-xs);">
-                            <i class="fas fa-check-circle" style="color: var(--color-primary); font-size: var(--text-lg);"></i>
-                            <h3 class="card-title" style="margin-bottom: 0;">પોલીકાર્બોનેટ ડોમ</h3>
-                        </div>
-                        <p class="card-desc">પોલીકાર્બોનેટ ડોમ services by SARAV Fabrication.</p>
-                    </div>
-                </div>
 
                 <!-- લેઝર કટ ગેટ -->
                 <div class="card" style="padding: 0; overflow: hidden; border: none; background: transparent; display: flex; flex-direction: column;">
@@ -498,19 +466,6 @@
                     </div>
                 </div>
 
-                <!-- SS ટાંકી -->
-                <div class="card" style="padding: 0; overflow: hidden; border: none; background: transparent; display: flex; flex-direction: column;">
-                    <div class="project-img-wrapper" style="height: 220px; background: #1a1b1f;">
-                        <img src="SS ટાંકી.png" alt="SS ટાંકી" style="height: 100%; width: 100%; object-fit: contain;">
-                    </div>
-                    <div style="background: var(--color-surface); padding: var(--space-lg); border-radius: 0 0 12px 12px; border: var(--glass-border); border-top: none; flex-grow: 1;">
-                        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: var(--space-xs);">
-                            <i class="fas fa-check-circle" style="color: var(--color-primary); font-size: var(--text-lg);"></i>
-                            <h3 class="card-title" style="margin-bottom: 0;">SS ટાંકી</h3>
-                        </div>
-                        <p class="card-desc">SS ટાંકી services by SARAV Fabrication.</p>
-                    </div>
-                </div>
 
                 <!-- કલર & પ્રાઇમર -->
                 <div class="card" style="padding: 0; overflow: hidden; border: none; background: transparent; display: flex; flex-direction: column;">
@@ -699,6 +654,10 @@
                     </div>
                     <p style="font-family: var(--font-primary); font-size: 0.75rem; font-weight: 600; color: var(--color-primary); letter-spacing: 2px; text-transform: uppercase; margin-bottom: var(--space-sm); line-height: 1; padding-left: 5px;">&gt; Weld &bull; Shape &bull; Create</p>
                     <p class="card-desc" style="max-width: 320px; line-height: 1.8;">Setting the gold standard in industrial fabrication across Gujarat with uncompromising quality and certified engineering.</p>
+                    <div style="display: flex; gap: 15px; margin-top: var(--space-md);">
+                        <a href="https://www.facebook.com/share/1DYYgjmCeT/" target="_blank" aria-label="Facebook" style="color: var(--color-text-muted); font-size: 1.2rem; transition: color 0.3s;" onmouseover="this.style.color='var(--color-primary)'" onmouseout="this.style.color='var(--color-text-muted)'"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/saravfabrication?utm_source=qr&igsi=MWE3YmpxNHNpMHFjeA%3D%3D" target="_blank" aria-label="Instagram" style="color: var(--color-text-muted); font-size: 1.2rem; transition: color 0.3s;" onmouseover="this.style.color='var(--color-primary)'" onmouseout="this.style.color='var(--color-text-muted)'"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
                 <div>
                     <h3 class="footer-title">Quick Links</h3>

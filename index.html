@@ -53,28 +53,10 @@
 
     <!-- Video Banner Section -->
     <section class="video-banner" style="padding-top: calc(var(--space-3xl) + 20px); background: #050505; text-align: center; position: relative;">
-        <div class="hero-video-wrapper" style="margin: 0 auto; box-shadow: none; margin-bottom: 0; cursor: pointer; position: relative;" onclick="const v = this.querySelector('video'); if(v.muted){v.muted=false; this.querySelector('.unmute-overlay').style.display='none';} else {v.paused ? v.play() : v.pause();}">
-            <video id="heroVideo" src="a.mp4" playsinline loop disablePictureInPicture style="pointer-events: none; width: 100%; height: auto; display: block; object-fit: cover;"></video>
-            <div class="unmute-overlay" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.6); color: white; padding: 10px 20px; border-radius: 30px; font-size: 1.2rem; pointer-events: none; display: none; z-index: 10;">
-                <i class="fas fa-volume-mute"></i> Click to Unmute
-            </div>
+        <div class="hero-video-wrapper" style="margin: 0 auto; box-shadow: none; margin-bottom: 0; cursor: pointer;">
+            <video src="a.mp4" autoplay playsinline loop disablePictureInPicture style="pointer-events: none; width: 100%; height: auto; display: block; object-fit: cover;"></video>
         </div>
     </section>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var video = document.getElementById("heroVideo");
-            var overlay = document.querySelector('.unmute-overlay');
-            video.muted = false;
-            var playPromise = video.play();
-            if (playPromise !== undefined) {
-                playPromise.catch(function(error) {
-                    video.muted = true;
-                    video.play();
-                    overlay.style.display = 'block';
-                });
-            }
-        });
-    </script>
 
     <!-- Hero Section -->
     <section class="hero" style="min-height: 85vh; padding-top: 0;">
